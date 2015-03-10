@@ -4,7 +4,7 @@ import java.sql.*;
 
 public class Hello {
 	
-	
+	/*
 	public void test(){
 		
 		
@@ -19,7 +19,7 @@ public class Hello {
 		    }
 		    try {
 		      Connection connect = DriverManager.getConnection(
-		          "jdbc:mysql://192.168.122.89:3306/mysql?user=admin&password=osv");
+		    		  "jdbc:mysql://localhost:3306/abc","abc","osv");
 		           //连接URL为   jdbc:mysql//服务器地址/数据库名  ，后面的2个参数分别是登陆用户名和密码
 
 		      System.out.println("Success connect Mysql server!");
@@ -35,7 +35,7 @@ public class Hello {
 		      e.printStackTrace();
 		    }
 	}
-	
+	*/
   public static void main(String args[]) {
     try {
       Class.forName("com.mysql.jdbc.Driver");     //加载MYSQL JDBC驱动程序   
@@ -48,7 +48,7 @@ public class Hello {
     }
     try {
       Connection connect = DriverManager.getConnection(
-          "jdbc:mysql://localhost:3306/mysql","root","root");
+          "jdbc:mysql://192.168.122.89:3306/mysql","admin","osv");
            //连接URL为   jdbc:mysql//服务器地址/数据库名  ，后面的2个参数分别是登陆用户名和密码
 
       System.out.println("Success connect Mysql server!");
